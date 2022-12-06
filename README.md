@@ -6,7 +6,7 @@ You can grow the jigsaw manually until you're satisfied and download the result 
 
 Use with caution!
 
-PS. Nothing is uploaded anywhere, your SVG border stays in your computer!
+PS. Nothing is uploaded anywhere, your SVG border stays in your computer.
 
 # How to use
 
