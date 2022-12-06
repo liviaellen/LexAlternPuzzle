@@ -17,7 +17,7 @@ PS. Nothing is uploaded anywhere, your SVG border stays in your computer.
    * Initial grid possition noise: how much noise will be added to each seed position. Setting this parameter to 0 will place the seeds in a regular square grid.
    * Growth radius: cells will only expand up to this radius away from the seed cell. It should be set to at least 2x grid size.
    * Curve fitting threshold: higher value = the vectorizer uses more straight line segments. Lower value: less straight line segments, more jittery curves.
-   * Magic number: just leave this at 6.2 ok?
+   * Magic number: just leave this at 6.2.
    * Growth probability: each cell will grow with this probability each cycle.
    * Cell size: how a cell translates to the physical world. Each cell represents an area of size x size mm. Set to at least 2mm, better if 3 or more, so that choke points don't create too weak pieces.
    * Preview viewing scale: size of each cell in pixels for the colored preview thing.
