@@ -55,7 +55,7 @@
         }
     </style>
     <meta charset="UTF-8">
-    <title>CelljigsawJS</title>
+    <title>Lex Altern Puzzle</title>
     <script type="text/javascript" src="imagetracer.js"></script>
     <script type="text/javascript" src="flatten.js"></script>
     <script type="text/javascript">
@@ -477,7 +477,7 @@
 
 
                                                 //I don't know how the 6.2 thing works, but it seems to work. This algorithm was empirically found
-                                                if (nnnc_len / nnc_len > parseFloat($("mnumber").value)) {
+                                                if (nnnc_len / nnc_len > 6.2) {
                                                     //console.log(nnnc_len + " " + nnc_len + " " + neighborval);
                                                     growth.push({ row: neighbor.row, col: neighbor.col, val: currentcellval });
                                                     grown.push({ row: neighbor.row, col: neighbor.col });
@@ -1108,15 +1108,15 @@
             </tr>
             <tr>
                 <td>Growth radius:</td>
-                <td><input id="gradius" type="text" value="20" size="5" /> cells</td>
+                <td><input id="gradius" type="text" value="42" size="5" /> cells</td>
             </tr>
             <tr>
                 <td>Curve fitting threshold (>0, decimal):</td>
-                <td><input id="qtres" type="text" value="1" size="5" /></td>
+                <td><input id="qtres" type="text" value="0.35" size="5" /></td>
             </tr>
             <tr>
                 <td>Straight line fitting threshold (>0, decimal):</td>
-                <td><input id="ltres" type="text" value="0.00001" size="5" /></td>
+                <td><input id="ltres" type="text" value="0.0001" size="5" /></td>
             </tr>
             <tr>
                 <td>Smooth choke points:</td>
@@ -1124,7 +1124,7 @@
             </tr>
             <tr>
                 <td>Corner pre-smooth:</td>
-                <td><input id="cps" type="checkbox" /></td>
+                <td><input id="cps" type="checkbox" checked/></td>
             </tr>
             <tr>
                 <td>"Pointy" piece growth:</td>
@@ -1134,10 +1134,7 @@
                 <td>Show traced vectors over preview</td>
                 <td><input id="stv" type="checkbox" /></td>
             </tr>
-            <tr>
-                <td>Magic number(just leave it at 6.2):</td>
-                <td><input id="mnumber" type="text" value="6.2" size="5" /></td>
-            </tr>
+
             <tr>
                 <td>Growth probability (0 to 1):</td>
                 <td><input id="growth_prob" type="text" value="0.5" size="5" /></td>
